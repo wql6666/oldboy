@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="47e0d149-b9cb-41cc-80d1-6f73df4a7501" name="Default Changelist" comment="" />
+    <list default="true" id="47e0d149-b9cb-41cc-80d1-6f73df4a7501" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git.go" beforeDir="false" afterPath="$PROJECT_DIR$/git.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,8 +124,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-64" />
-    <option name="y" value="81" />
+    <option name="x" value="745" />
+    <option name="y" value="63" />
     <option name="width" value="924" />
     <option name="height" value="823" />
   </component>
@@ -250,7 +253,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-64" y="81" width="924" height="823" extended-state="0" />
+    <frame x="0" y="70" width="924" height="823" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978261" visible="true" weight="0.26327944" />
       <window_info id="Structure" order="1" sideWeight="0.5021739" side_tool="true" weight="0.2596811" />
