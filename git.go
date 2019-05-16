@@ -2,6 +2,6 @@ git add
 git commit
 git status
 git stash
-hi
+hello
 git merge
 
