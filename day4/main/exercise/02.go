@@ -1,32 +1,23 @@
 package main
 
 import "fmt"
-
+//区分因数和质因数
 func main() {
-
-	for i:=1;i<=1000;i++{
-		var v int
-		for _,v=range(factor(i)){
-			v+=v
-		}
-		if i==v{
+	for i := 1; i <= 1000; i++ {
+		if i == factor(i) {
 			fmt.Println(i)
 		}
 	}
 }
 
-func factor (n int)[]int  {
-	var result []int
-	  m:=n
-	for i:=1;i<=m;i++{
-		if n%i==0{
-			result=append(result,i)
-		//	fmt.Println("****",n)
-		//	fmt.Println("&&&",result)
-			n=n/i
+func factor(n int) int {
+	sum := 0
+	for i := 1; i < n; i++ {
+		if n%i == 0 {
+			sum += i
 		}
 
 	}
-	return result
+	return sum
 
 }
