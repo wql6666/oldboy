@@ -18,6 +18,10 @@ type test interface {
 	sleep()
 }
 
+type test1 interface {
+	work()
+}
+
 func (this *student) work() {
 	fmt.Println("student work")
 }
@@ -38,16 +42,20 @@ func (this *people) work() {
 
 
 func main() {
-	var test1 test
-	fmt.Printf("%v",test1)
-	stu1:=student{"alan",18,"nan"}
-	test1=&stu1
-	test1.work()
-	test1.sleep()
+	var a test
+	var b test1
+	fmt.Printf("%T",a)
+	stu1:=student{}
+	//stu1:=student{"alan",18,"nan"}
+	a=&stu1
+	b=&stu1
+	b.work()
+	a.work()
+	a.sleep()
 	people1:=people{}
 	people1.name="bob"
-	test1=&people1
-	test1.work()
-	test1.sleep()
+	a=&people1
+	a.work()
+	a.sleep()
 
 }
