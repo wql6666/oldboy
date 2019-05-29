@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	//test()
+	//testexaple()
 	var a =[]int{1,2,3,5,5}
 	var b = []int{0,0,0,0,0,6,7,8,9,10}
 	num:=copy(a,b)

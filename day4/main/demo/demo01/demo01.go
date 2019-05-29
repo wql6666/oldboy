@@ -7,7 +7,7 @@ import (
 
 func main() {
 	//for ; ; {
-	//	test()
+	//	testexaple()
 	//	time.Sleep(time.Second)
 	//}
 	err:=initConfig()

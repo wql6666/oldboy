@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	//test()
+	//testexaple()
 	//testString()
 	//testFloat()
 	testSearchInts()

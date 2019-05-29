@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	//test()
+	//testexaple()
 	//test1()
 	//test2()
 	test3()//写入文件
