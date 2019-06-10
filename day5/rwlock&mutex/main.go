@@ -15,7 +15,7 @@ func main() {
 		4: 44,
 		5: 55,
 	}
-	//testRwlock(map1)
+	testRwlock(map1)
 	testMutexlock(map1)
 
 }
@@ -23,19 +23,19 @@ func main() {
 func testMutexlock(b map[int]int) {
 	var count int32
 	var rwlock sync.Mutex
-	for i := 1; i <= 2; i++ {
-		go func(map1 map[int]int) {
-			for ; ; {
-				rwlock.Lock()
-				time.Sleep(time.Millisecond * 10)
-				b[1] = 100
-				rwlock.Unlock()
-				atomic.AddInt32(&count, 1)
-			}
-
-		}(b)
-	}
-	for i := 1; i <= 1000; i++ {
+	//for i := 1; i <= 2; i++ {
+	//	go func(map1 map[int]int) {
+	//		for ; ; {
+	//			rwlock.Lock()
+	//			time.Sleep(time.Millisecond * 10)
+	//			b[1] = 100
+	//			rwlock.Unlock()
+	//			atomic.AddInt32(&count, 1)
+	//		}
+	//
+	//	}(b)
+	//}
+	for i := 1; i <= 100; i++ {
 
 		go func() {
 			for ; ; {
@@ -56,17 +56,17 @@ func testMutexlock(b map[int]int) {
 func testRwlock(b map[int]int) {
 	var count int32
 	var rwlock sync.RWMutex
-	for i := 1; i <= 2; i++ {
-		go func(map1 map[int]int) {
-			for ; ; {
-				rwlock.Lock()
-				time.Sleep(time.Millisecond * 10)
-				b[1] = 100
-				rwlock.Unlock()
-				atomic.AddInt32(&count, 1)
-			}
-		}(b)
-	}
+	//for i := 1; i <= 2; i++ {
+	//	go func(map1 map[int]int) {
+	//		for ; ; {
+	//			rwlock.Lock()
+	//			time.Sleep(time.Millisecond * 10)
+	//			b[1] = 100
+	//			rwlock.Unlock()
+	//			atomic.AddInt32(&count, 1)
+	//		}
+	//	}(b)
+	//}
 	for i := 1; i <= 100; i++ {
 
 		go func() {

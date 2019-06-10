@@ -8,6 +8,7 @@ import (
 
 func main() {
 	test1()
+	test()
 }
 
 func test() {

@@ -14,6 +14,7 @@ type student struct {
 
 func main() {
 	test2()
+	test()
 }
 
 func test() {
