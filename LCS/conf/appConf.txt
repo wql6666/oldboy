@@ -1,0 +1,13 @@
+[appConf]
+log_path=/workspace/go/src/oldboy/LCS/log/appLog/app_log.txt
+log_level=debug
+
+[collect]
+log_path=
+topic=nginx_topic
+chan_size=100
+
+
+[kafka]
+kafka_addr=172.20.10.4:9092
+
